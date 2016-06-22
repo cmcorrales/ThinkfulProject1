@@ -1,0 +1,40 @@
+.col-md-4 {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  height: 600px;
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+.col-md-4 > .highlights, .nurturetips {
+  flex: 1 1 auto;
+  overflow: auto;
+  background-color: #eee; }
+
+.container-fluid {
+  background-color: #00A566; }
+
+h1 {
+  font-style: raleway, sans-serif;
+  letter-spacing: .2em;
+  font-size: 4em;
+  text-align: center;
+  color: #ffffff; }
+
+h2 {
+  font-style: roboto, sans-serif;
+  font-weight: 100;
+  letter-spacing: .1em;
+  font-size: 1.5em;
+  text-align: center;
+  color: white; }
+
+h3 {
+  font-style: roboto, sans-serif;
+  font-weight: 130;
+  letter-spacing: .2em;
+  font-size: 1em;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
