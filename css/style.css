@@ -1,3 +1,8 @@
+@import compass
+
+$green: #A3CD99
+$darkgreen: #579E81
+
 html, body {
   height: 100%;
   width: 100%;
@@ -64,5 +69,22 @@ h3 {
   justify-content: flex-end;
   align-items: flex-end;
   align-self: flex-end; }
-
 /*# sourceMappingURL=style.css.map */
+
+input[type=range],
+	::-moz-range-track,
+	 ::-ms-track {
+	 -webkit-appearance: none;
+	 background-color: 3f91e5;
+	 width: 250px;
+	 height:20px;
+}
+
+::-webkit-slider-thumb,
+	::-moz-range-thumb,
+	 ::-ms-thumb {
+	-webkit-appearance: none;
+	background-color: #666;
+	width: 10px;
+	height: 20px;
+}
