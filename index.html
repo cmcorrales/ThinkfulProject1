@@ -1,40 +1,79 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div class="container-fluid">
-  <h1>neurture</h1>
-  <h2>visualize and nurture your child's neural architecture</h3>
-</div>
-<div class="col-mid-8">
-  <div class="brain">
-    <img src=""></img>
-  </div>
-  <div class="slider">
-  </div>
-<div class="col-md-4">
-  <div class="highlights">
-    <h3></h3>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </div>
-  <div class="nurturetips">
-    <h3>nurture tips</h3>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </div>
-</div>
-</body
-</html>
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+            <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="css/style.css">
+          </head>
+          <body>
+          <div class="title">
+            <h1>neurture</h1>
+            <h2>visualize and nurture your child's neural architecture</h3>
+          </div>
+          <div class="wrapper">
+          <div class="main">
+          <div class="visualizations">
+            <div class="brain">
+              <img src=""></img>
+            </div>
+          </div>
+          <div class="slider">
+            <input id="slider" type="range" min="0" max="17" value="0" step="1" list="age" onchange="rangevalue.value=value"/>
+            <output id="rangevalue">0</output>
+            <datalist id="age">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+            </datalist>
+        </div>
+      </div>
+          <div class="information">
+            <div class="highlights">
+              <h3>highlights</h3>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </div>
+            <div class="nurturetips">
+              <h3>nurture tips</h3>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </div>
+          </div>
+          </div>
+
+          </div>
+          </div>
+          <script src="js/script.js"></script>
+          </body>
+          </html>

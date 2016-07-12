@@ -1,26 +1,43 @@
-.col-md-4 {
-  display: flex;
-  flex-flow: column;
-  align-items: stretch;
-  height: 600px;
-  border: 0;
+html, body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0; }
 
-.col-md-4 > .highlights, .nurturetips {
-  flex: 1 1 auto;
-  overflow: auto;
-  background-color: #eee; }
+.wrapper {
+  display: flex;
+  flex-flow: row; }
 
-.container-fluid {
-  background-color: #00A566; }
+.information {
+  flex: 2 auto; }
+
+.highlights {
+  background-color: #eee;
+  padding: 20px; }
+
+.nurturetips {
+  background-color: #eee;
+  padding: 20px; }
+
+.title {
+  background-color: #A3CD99;
+  display: block;
+  padding: 15px;
+  width: 100%;
+  align-items: center; }
+
+.main {
+  display: flex;
+  flex: 5 auto;
+  background-color: blue; }
 
 h1 {
   font-style: raleway, sans-serif;
   letter-spacing: .2em;
   font-size: 4em;
   text-align: center;
-  color: #ffffff; }
+  color: #ffffff;
+  align-items: flex-start; }
 
 h2 {
   font-style: roboto, sans-serif;
@@ -36,3 +53,37 @@ h3 {
   letter-spacing: .2em;
   font-size: 1em;
   text-align: center; }
+
+.slider {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; }
+
+#slider {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end; }
+
+input[type="range"] {
+  -webkit-appearance: none !important;
+  /*Needed to reset default slider styles */
+  width: 100%;
+  height: 15px;
+  background-color: #A3CD99;
+  border: 1px solid #97c68b;
+  border-radius: 10px;
+  margin: auto;
+  transition: all 0.3s ease; }
+  input[type="range"]:hover {
+    background-color: #b2d5aa; }
+
+#rangevalue {
+  text-align: center;
+  font-family: 'Quantico', sans-serif;
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  padding: 10px 0px;
+  width: 100%;
+  color: #579E81; }

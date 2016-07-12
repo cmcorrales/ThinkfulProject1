@@ -2,7 +2,7 @@ var gulp = require('gulp')
 var livereload = require('gulp-livereload')
 var sass = require('gulp-sass')
 var express = require('express')
-gulp.task('default', ['serve'], function () {
+gulp.task('default', ['serve', 'sass'], function () {
   livereload.listen()
   gulp.watch('./css/*.scss', ['sass'])
 })

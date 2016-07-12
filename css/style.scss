@@ -1,21 +1,40 @@
 $gray-standard: #eee;
 $green: #00A566;
-.col-md-4 {
-  display: flex;
-  flex-flow: column;
-  align-items: stretch;
-  height: 600px;
-  border: 0;
+$green: #A3CD99;
+$darkgreen: #579E81;
+
+html, body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
-.col-md-4 > .highlights, .nurturetips {
-  flex: 1 1 auto;
-  overflow: auto;
-  background-color: $gray-standard;
+.wrapper {
+  display: flex;
+  flex-flow: row;
 }
-.container-fluid {
+.information {
+  flex: 2 auto;
+ }
+.highlights {
+  background-color: $gray-standard;
+  padding: 20px;
+}
+.nurturetips {
+  background-color: $gray-standard;
+  padding: 20px;
+}
+.title {
   background-color: $green;
+  display: block;
+  padding: 15px;
+  width: 100%;
+  align-items: center;
+}
+.main {
+  display: flex;
+  flex: 5 auto;
+  background-color: blue;
 }
 h1 {
   font-style: raleway, sans-serif;
@@ -23,6 +42,7 @@ h1 {
   font-size: 4em;
   text-align: center;
   color: #ffffff;
+  align-items: flex-start;
 }
 h2 {
   font-style: roboto, sans-serif;
@@ -38,4 +58,39 @@ h3 {
   letter-spacing: .2em;
   font-size: 1em;
   text-align: center;
+}
+.slider {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+#slider {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+input[type="range"] {
+  -webkit-appearance: none !important; /*Needed to reset default slider styles */
+  width: 100%;
+  height: 15px;
+  background-color: $green;
+  border: 1px solid darken($green, 4%);
+  border-radius: 10px;
+  margin: auto;
+  transition: all 0.3s ease;
+  &:hover {
+  background-color: lighten($green, 5%);
+  }
+}
+
+#rangevalue {
+  text-align: center;
+  font-family: 'Quantico', sans-serif;
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  padding: 10px 0px;
+  width: 100%;
+  color: $darkgreen;
 }
