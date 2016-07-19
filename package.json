@@ -4,7 +4,8 @@
   "description": "Visualization of brain developmental stages",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/cmcorrales/ThinkfulProject1/issues"
   },
-  "homepage": "https://github.com/cmcorrales/ThinkfulProject1#readme"
+  "homepage": "https://github.com/cmcorrales/ThinkfulProject1#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-livereload": "^3.8.1"
+  },
+  "devDependencies": {}
 }
