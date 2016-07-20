@@ -1,5 +1,7 @@
     /*var x = document.getElementById("slider").value;
     document.getElementById("slider").innerHTML = x;*/
+$("#information").load("/information.html");
+
 var sliderElement= document.getElementById("slider")
 sliderElement.onchange=function(event) {
   console.log(event);
