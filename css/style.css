@@ -20,7 +20,7 @@ html, body {
   padding: 20px; }
 
 .title {
-  background-color: #00A566;
+  background-color: #A3CD99;
   display: block;
   padding: 15px;
   width: 100%;
@@ -65,4 +65,25 @@ h3 {
   align-items: flex-end;
   align-self: flex-end; }
 
-/*# sourceMappingURL=style.css.map */
+input[type="range"] {
+  -webkit-appearance: none !important;
+  /*Needed to reset default slider styles */
+  width: 100%;
+  height: 15px;
+  background-color: #A3CD99;
+  border: 1px solid #97c68b;
+  border-radius: 10px;
+  margin: auto;
+  transition: all 0.3s ease; }
+  input[type="range"]:hover {
+    background-color: #b2d5aa; }
+
+#rangevalue {
+  text-align: center;
+  font-family: 'Quantico', sans-serif;
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  padding: 10px 0px;
+  width: 100%;
+  color: #579E81; }

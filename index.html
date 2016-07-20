@@ -22,36 +22,26 @@
             </div>
           </div>
           <div class="slider">
-            <input id="slider" type="range" value="900"/>
-        </div>
-      </div>
-          <div class="information">
-            <div class="highlights">
-              <h3>highlights</h3>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </div>
-            <div class="nurturetips">
-              <h3>nurture tips</h3>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </div>
+            <input id="slider" type="range" min="0" max="12" value="0" step="1" list="age" onchange="rangevalue.value=value"/>
+            <output id="rangevalue">0</output>
+            <datalist id="age">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </datalist>
           </div>
           </div>
-
-          </div>
+          <div id="information">
           </div>
           <script src="js/script.js"></script>
           </body>
